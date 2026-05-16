@@ -1,7 +1,23 @@
+# Python
 venv/
 __pycache__/
 *.pyc
+
+# Environment variables
 .env
-backend/app/data/
+
+# FAISS vector database
 backend/app/db/faiss_index/
-node_modules/
+
+# Uploaded PDFs
+backend/app/data/
+
+# Node modules
+frontend/node_modules/
+
+# Vite build files
+frontend/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
