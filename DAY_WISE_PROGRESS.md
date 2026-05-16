@@ -1,52 +1,87 @@
-# AI Document Search - Progress Log
+# AI Document Semantic Search — Day Wise Progress
+
+## Day 1 — Backend RAG Pipeline Setup
+
+### Completed
+
+* Initialized FastAPI backend
+* Created API routes:
+
+  * `/upload`
+  * `/chat`
+  * `/health`
+* Implemented PDF loading using PyPDFLoader
+* Implemented text chunking using RecursiveCharacterTextSplitter
+* Added HuggingFace embeddings (`all-MiniLM-L6-v2`)
+* Implemented FAISS vector database storage
+* Added semantic similarity retrieval
+* Integrated Groq LLM API
+* Built Retrieval-Augmented Generation (RAG) pipeline
+* Added environment configuration support using `.env`
+* Added Dockerfile and project structure
+* Initialized Git repository
+* Pushed initial backend setup to GitHub
+
+### Learned
+
+* FastAPI basics
+* API routing
+* Vector databases
+* Embeddings
+* Semantic search
+* RAG architecture
+* FAISS indexing
+* Environment variable management
 
 ---
 
-# Day 1
+## Day 2 — Frontend Setup and Project Integration
 
-## What I Built
-- FastAPI backend setup
-- PDF upload API
-- PDF parsing service
-- Text chunking
-- Sentence-transformer embeddings
-- FAISS vector database
-- Retrieval pipeline
-- Groq LLM integration
-- Chat endpoint
+### Completed
 
-## What I Learned
-- FastAPI routing
-- RAG architecture
-- Vector databases
-- Embeddings
-- Similarity search
-- Prompt context injection
+* Initialized React frontend using Vite
+* Configured React application structure
+* Created frontend folders:
 
-## Issues Faced
-- ModuleNotFoundError: app
-- Groq deprecated model issue
-- FAISS retrieval errors
+  * components
+  * hooks
+  * pages
+  * services
+* Added Vite configuration
+* Connected frontend and backend project structure
+* Successfully ran frontend and backend simultaneously
+* Added professional `.gitignore`
+* Cleaned repository structure
+* Added day-wise project tracking
 
-## Fixes
-- Ran uvicorn from backend folder
-- Updated model to llama-3.1-8b-instant
-- Added proper FAISS loading
+### Learned
 
-## Next Steps
-- Build React frontend
-- Add chat UI
-- Connect frontend with backend APIs
+* React + Vite setup
+* Frontend project structuring
+* Running multiple development servers
+* Git workflow
+* Professional repository management
+* `.gitignore` best practices
 
+---
 
-# Day 2
+## Upcoming Tasks
 
-## What I want to Built
-- React frontend setup
-- Chat components
-- API integration
+### Day 3 Goals
 
-## What I think i will learn 
-- React hooks
-- Axios API calls
-- State management
+* Build PDF upload frontend UI
+* Connect upload API
+* Create chat interface
+* Display AI responses
+* Add loading states
+* Improve UI styling
+
+### Future Improvements
+
+* Multi-document support
+* Authentication
+* Pinecone integration
+* Chat history
+* Streaming responses
+* Deployment using Docker
+* Cloud hosting
